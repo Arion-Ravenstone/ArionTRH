@@ -168,6 +168,49 @@ h3 {
   color: var(--countdown-color);
 }
 
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.gallery-item {
+  background-color: var(--secondary-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  max-height: 400px; /* Limit image height */
+  object-fit: cover;
+  border: 3px solid var(--accent-color);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.gallery-item h3 {
+  font-family: 'Lora', serif; /* Use Lora for image titles */
+  color: var(--highlight-color);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: none;
+}
+
+.gallery-item p {
+  font-size: 0.95rem;
+  color: var(--text-color-light);
+}
+
 .countdown {
   text-align: center;
   font-size: 2.5rem;
