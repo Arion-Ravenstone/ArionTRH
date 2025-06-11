@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J. Murphy | Characters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/7cab98e2b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            const backToTopBtn = document.getElementById("backToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Characters of the Arion Saga</h1>
+        <p>Meet the flawed, fierce, and unforgettable souls who walk these brutal lands.</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#books">Books</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="characters.html">Characters</a>
+        <a href="lore-codex.html">Lore Codex</a>
+        <a href="sample-chapter.html">Sample Chapter</a>
+        <a href="YOUR_BLOG_LINK_HERE" target="_blank">Blog</a> <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Main Protagonists & Allies</h2>
+        <div class="character-grid">
+            <div class="character-card">
+                <img src="https://via.placeholder.com/200x200?text=REPLACE+WITH+ARION+PIC" alt="Arion Profile" />
+                <h3>Arion</h3>
+                <span class="title">The Reluctant Warrior</span>
+                <p>Haunted by the ghosts of his past, Arion is a survivor, not a hero. He fights not for glory, but for vengeance, driven by a brutal will to carve justice from a world that broke him.</p>
+                <p><strong>Key Traits:</strong> Resilient, Scarred, Ruthless, Loyal (to the few he trusts).</p>
+            </div>
+            <div class="character-card">
+                <img src="https://via.placeholder.com/200x200?text=REPLACE+WITH+GISELA+PIC" alt="Gisela Profile" />
+                <h3>Gisela</h3>
+                <span class="title">The Stoic Mage</span>
+                <p>Arion's oldest friend and a formidable sorceress. Gisela's mind is as sharp as her magic, and she bears the heavy burden of secrets and sacrifices made to protect those she cares about.</p>
+                <p><strong>Key Traits:</strong> Brilliant, Guarded, Powerful, Pragmatic.</p>
+            </div>
+            <div class="character-card">
+                <img src="https://via.placeholder.com/200x200?text=REPLACE+WITH+LUNA+NANAMI+PIC" alt="Luna & Nanami Profile" />
+                <h3>Luna & Nanami</h3>
+                <span class="title">The Lost Lights</span>
+                <p>A bard and a dancer whose intertwined lives brought a fragile beauty to Arion's grim existence. Their tragic fates are a constant, painful reminder of what was lost and what must be reclaimed.</p>
+                <p><strong>Key Traits:</strong> Creative, Loving, Innocent (tragically so), Central to Arion's drive.</p>
+            </div>
+            <div class="character-card">
+                <img src="https://via.placeholder.com/200x200?text=REPLACE+WITH+NEW+CHARACTER+PIC" alt="New Character Placeholder" />
+                <h3>[New Character Name]</h3>
+                <span class="title">[Their Title/Role]</span>
+                <p>[Brief description of this character, their role, and personality.]</p>
+                <p><strong>Key Traits:</strong> [List 2-3 key traits.]</p>
+            </div>
+            </div>
+    </section>
+
+    <footer>
+        <p>© 2025 J. Murphy | All Rights Reserved</p>
+    </footer>
+
+    <button onclick="topFunction()" id="backToTopBtn" class="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+</html>
