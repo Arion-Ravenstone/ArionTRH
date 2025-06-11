@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>J. Murphy | Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/7cab98e2b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" /> 
+    <script>
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            const backToTopBtn = document.getElementById("backToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+        <p>A visual journey through the brutal worlds and reluctant heroes.</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#books">Books</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="characters.html">Characters</a>
+        <a href="lore-codex.html">Lore Codex</a>
+        <a href="sample-chapter.html">Sample Chapter</a>
+        <a href="YOUR_BLOG_LINK_HERE" target="_blank">Blog</a> <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <section>
+        <h2>Concept Art & World Maps</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x400?text=REPLACE+WITH+COVER+ART+1" alt="Arion Book 1 Cover Art" />
+                <h3>Arion: Shadows of the Ancient - Official Cover</h3>
+                <p>The iconic cover art for the first book in the Arion saga.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x400?text=REPLACE+WITH+CHARACTER+ART+ARION" alt="Arion Character Art" />
+                <h3>Arion: The Reluctant Warrior</h3>
+                <p>An early concept sketch depicting Arion in battle gear.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x400?text=REPLACE+WITH+WORLD+MAP" alt="Map of the Known Realms" />
+                <h3>Map of the Bleeding Lands</h3>
+                <p>Explore the perilous regions Arion must traverse.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x400?text=REPLACE+WITH+GISELA+ART" alt="Gisela Concept Art" />
+                <h3>Gisela: Mage & Strategist</h3>
+                <p>The stoic and powerful mage, Gisela, in an artist's rendition.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x400?text=REPLACE+WITH+UNDERWORLD+ART" alt="Underworld Concept" />
+                <h3>Whispers of the Underworld</h3>
+                <p>A visual exploration of the ominous realm of Death.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/300x400?text=REPLACE+WITH+WEAPON+ART" alt="Arion's Blade" />
+                <h3>The Oathblade</h3>
+                <p>Detailed render of Arion's iconic, ancient weapon.</p>
+            </div>
+            </div>
+    </section>
+
+    <footer>
+        <p>© 2025 J. Murphy | All Rights Reserved</p>
+    </footer>
+
+    <button onclick="topFunction()" id="backToTopBtn" class="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+</html>
