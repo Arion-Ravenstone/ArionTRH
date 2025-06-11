@@ -280,6 +280,47 @@ h3 {
   transform: translateY(-3px);
 }
 
+.sample-content {
+  background-color: var(--secondary-bg);
+  padding: 2.5rem;
+  margin: 2rem 0;
+  border: 2px dashed var(--accent-color);
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.sample-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.sample-content strong {
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: var(--highlight-color);
+}
+
+.download-button {
+  display: inline-block;
+  background-color: var(--highlight-color);
+  color: var(--text-color-dark);
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.download-button:hover {
+  background-color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
 footer {
   text-align: center;
   background-color: #111;
