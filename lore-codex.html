@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial=1.0" />
+    <title>J. Murphy | Lore Codex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/7cab98e2b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            const backToTopBtn = document.getElementById("backToTopBtn");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopBtn.style.display = "block";
+            } else {
+                backToTopBtn.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Lore Codex</h1>
+        <p>Unravel the mysteries, history, and forgotten truths of Arion's world.</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#books">Books</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="characters.html">Characters</a>
+        <a href="lore-codex.html">Lore Codex</a>
+        <a href="sample-chapter.html">Sample Chapter</a>
+        <a href="YOUR_BLOG_LINK_HERE" target="_blank">Blog</a> <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <section>
+      <img class="coming-soon" src="./media/coming soon.png" alt="">
+    </section>
+    <!--
+    <section>
+        <h2>Mythology & History</h2>
+        <div class="codex-grid">
+            <div class="codex-entry-card">
+                <h3>The Shattered Pantheon</h3>
+                <p>Once revered, now silent and broken. Their abandonment reshaped magic and fate, leaving mortals to fend for themselves in a world devoid of divine guidance. Their silence breeds both despair and desperate power.</p>
+            </div>
+            <div class="codex-entry-card">
+                <h3>The Underworld</h3>
+                <p>A mythic, shifting realm ruled by Death itself. Few dare to speak its name, fewer still enter its domain. It is a place of shadows, echoes, and forgotten souls, a perilous journey for any who seek to defy its eternal grasp.</p>
+            </div>
+            <div class="codex-entry-card">
+                <h3>The Crimson Oath</h3>
+                <p>An ancient, blood-bound pact among forgotten warriors. Sworn in desperation, it grants immense power but demands a terrible price, twisting its wielders into something more, or less, than human.</p>
+            </div>
+            <div class="codex-entry-card">
+                <h3>The Age of Silence</h3>
+                <p>The period following the Pantheon's shattering, marked by widespread chaos, the rise of dark magic, and the slow, painful rebuilding of civilization without divine intervention.</p>
+            </div>
+            </div>
+
+        <h2 style="margin-top: 3rem;">Creatures & Factions</h2>
+        <div class="codex-grid">
+            <div class="codex-entry-card">
+                <h3>The Revenant Hordes</h3>
+                <p>Mindless armies of the reanimated dead, animated by dark magic and commanded by sinister necromancers. They are a constant threat to the living, a byproduct of the Underworld's influence.</p>
+            </div>
+            <div class="codex-entry-card">
+                <h3>The Iron Guard</h3>
+                <p>The last bastion of organized military might, sworn to protect the dwindling remnants of humanity. Though disciplined, their numbers are few, and their resolve is tested daily.</p>
+            </div>
+        </div>
+    </section>
+    -->
+
+    <footer>
+        <p>© 2025 J. Murphy | All Rights Reserved</p>
+    </footer>
+
+    <button onclick="topFunction()" id="backToTopBtn" class="back-to-top" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</body>
+</html>

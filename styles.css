@@ -283,6 +283,36 @@ h3 {
   margin-bottom: 0.5rem;
 }
 
+.codex-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.codex-entry-card {
+  background-color: var(--secondary-bg);
+  padding: 1.5rem;
+  border-left: 5px solid var(--accent-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.codex-entry-card:hover {
+  transform: translateY(-5px);
+}
+
+.codex-entry-card h3 {
+  font-family: 'Cinzel Decorative', serif;
+  color: var(--highlight-color);
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+.codex-entry-card p {
+  font-size: 1rem;
+}
 .countdown {
   text-align: center;
   font-size: 2.5rem;
