@@ -1,0 +1,360 @@
+:root {
+  --primary-bg: #000000; /* Deep black for a dramatic foundation */
+  --secondary-bg: #161821; /* Dark slate blue for subtle differentiation */
+  --header-bg-start: #1A1E2E; /* Slightly richer navy for a bold start */
+  --header-bg-end: #0F213E; /* Deeper contrast for a dynamic header */
+  --accent-color: #0F3460; /* Rich, deep blue for elegant touches */
+  --highlight-color: #e60c2c; /* Muted crimson, avoiding overly pink tones */
+  --text-color-light: #FFFFFF; /* Bright white for crisp readability */
+  --text-color-dark: #0A0A0A; /* Very dark gray to complement the background */
+  --countdown-color: #0090C0; /* Cooler cyan, slightly refined for visibility */
+
+    
+}
+
+body {
+  margin: 0;
+  font-family: 'Lora', serif;
+  background-color: var(--primary-bg);
+  color: var(--text-color-light);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: linear-gradient(to right, var(--header-bg-start), var(--header-bg-end));
+  color: var(--text-color-dark);
+  text-align: center;
+  padding: 5rem 1rem;
+  border-bottom: 4px solid var(--accent-color);
+  position: relative;
+  overflow: hidden;
+  min-height: 400px; /* Ensure enough space for background image */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://via.placeholder.com/1500x600/101010/888888?text=Your+Epic+Homepage+Background+Image') no-repeat center center/cover; /* REPLACE THIS URL */
+  opacity: 0.15; /* Adjust for desired darkness */
+  z-index: 0;
+}
+
+header h1 {
+  font-family: 'Cinzel Decorative', serif;
+  font-size: 4.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.9);
+  position: relative;
+  z-index: 1;
+}
+
+header p {
+  font-size: 1.6rem;
+  font-style: italic;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+}
+
+.hero-cta {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--text-color-dark);
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  position: relative;
+  z-index: 1;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4);
+}
+
+.hero-cta:hover {
+  background-color: var(--highlight-color);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 119, 51, 0.6);
+}
+
+nav {
+  background-color: #111;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+nav a {
+  color: var(--highlight-color);
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.7rem 0.5rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--text-color-light);
+  border-bottom: 2px solid var(--accent-color);
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 3rem 2rem;
+}
+
+h2, h3 {
+  font-family: 'Cinzel Decorative', serif;
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--highlight-color);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+h3 {
+  text-align: left;
+  border-bottom: none;
+  color: var(--highlight-color);
+}
+
+.book-card {
+  background-color: var(--secondary-bg);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-left: 5px solid var(--accent-color);
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  width: 150px;
+  height: auto;
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  flex-shrink: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.book-details {
+  flex-grow: 1;
+}
+
+.book-details strong {
+  display: block;
+  margin-top: 1rem;
+  color: var(--countdown-color);
+}
+
+.countdown {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 2rem 0;
+  color: var(--countdown-color);
+  font-weight: bold;
+  background-color: var(--secondary-bg);
+  margin-top: 2rem;
+  border-radius: 8px;
+  box-shadow: inset 0 0 15px rgba(255, 69, 0, 0.6);
+}
+
+.newsletter-signup {
+  background-color: var(--secondary-bg);
+  padding: 2rem;
+  margin-top: 3rem;
+  border: 2px solid var(--highlight-color);
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.newsletter-signup input[type="email"] {
+  padding: 0.8rem;
+  width: 60%;
+  max-width: 300px;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: #0d0d0d;
+  color: var(--text-color-light);
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.newsletter-signup input[type="email"]:focus {
+  border-color: var(--highlight-color);
+}
+
+.newsletter-signup button {
+  background-color: var(--accent-color);
+  color: var(--text-color-dark);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+}
+
+.newsletter-signup button:hover {
+  background-color: var(--highlight-color);
+  transform: translateY(-2px);
+}
+
+.testimonials {
+  padding-top: 3rem;
+}
+
+.testimonial-card {
+  background-color: var(--secondary-bg);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--countdown-color);
+  font-style: italic;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.testimonial-card::before {
+  content: "“";
+  font-size: 3rem;
+  color: var(--countdown-color);
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  opacity: 0.6;
+}
+
+.testimonial-card p {
+  margin-left: 2rem;
+  font-size: 1.1rem;
+}
+
+.testimonial-card strong {
+  display: block;
+  text-align: right;
+  margin-top: 1rem;
+  font-style: normal;
+  color: var(--highlight-color);
+}
+
+.socials {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.socials a {
+  display: inline-block;
+  margin: 0 1rem;
+  color: var(--highlight-color);
+  font-size: 2.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.socials a:hover {
+  color: var(--text-color-light);
+  transform: translateY(-3px);
+}
+
+footer {
+  text-align: center;
+  background-color: #111;
+  color: #aaa;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+.back-to-top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--accent-color); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: var(--highlight-color); /* Add a darker background on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 3rem;
+  }
+
+  header p {
+      font-size: 1.2rem;
+  }
+
+  .book-card {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .book-card img {
+      margin-bottom: 1rem;
+  }
+
+  .newsletter-signup input[type="email"] {
+      width: 90%;
+      margin-bottom: 10px;
+  }
+
+  .newsletter-signup button {
+      width: 90%;
+  }
+
+  nav a {
+      margin: 0 0.5rem;
+      padding: 0.5rem 0;
+  }
+  nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 2.5rem;
+  }
+  nav a {
+      flex-basis: 45%; /* Two columns for smaller screens */
+  }
+}
