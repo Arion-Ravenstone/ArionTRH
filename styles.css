@@ -142,6 +142,13 @@ h3 {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
+.coming-soon img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .book-card {
   background-color: var(--secondary-bg);
   padding: 1.5rem;
