@@ -140,13 +140,17 @@ h3 {
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .coming-soon img {
   max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
+  object-fit: contain;
 }
 
 .book-card {
